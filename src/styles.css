@@ -1,0 +1,234 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #bbbeee, #8666f8);
+
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+}
+
+
+.background{
+  width: 430px;
+  height: 620px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+section{
+  height: 680px;
+  width: 400px;
+  /* background-color: rgba(255,255,255,0.13); */
+  background: rgba( 255, 255, 255, 0.3 );
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+ .wallet{
+  height: 780px;
+  width: 400px;
+  /* background-color: rgba(255,255,255,0.13); */
+  background: rgba( 255, 255, 255, 0.3 );
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+
+
+section, form *{
+  font-family: 'Poppins',sans-serif;
+  color: #32006a;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+section h1 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label,p{
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+ a {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+input{
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.517);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder{
+  color: #e5e5e5;
+}
+button{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+
+/* List */
+.container{
+  height: 680px;
+  width: 900px;
+  /* background-color: rgba(255,255,255,0.13); */
+  background: rgba( 255, 255, 255, 0.3 );
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+.container .list {
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.container .list:hover > i {
+  opacity: 1;
+}
+.container .list .wrapper {
+  padding-left: 10px;
+}
+.container .list .wrapper h3 {
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+.container .list .wrapper span {
+  min-width: 150px;
+  padding: 5px;
+  margin-left: 9px;
+  margin-right: 9px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-size: 0.7em;
+  color: #19224f;
+}
+
+
+.container .list  .wrapper .h5 {
+  font-size: 18px;
+  text-align: right;
+
+}
+
+.container .list  .wrapper .h1 {
+  font-size: 22px;
+  text-align: right;
+  color: #000;
+}
